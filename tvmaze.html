@@ -1,17 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <title>TV Maze</title>
-    <link rel="stylesheet"
-      href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <title>TV Maze</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
 
     <h1>TV Maze</h1>
 
     <form class="form-inline" id="search-form">
-      <input class="form-control" id="search-query" value="bletchley">
+      <input class="form-control" id="search-query" placeholder="Enter Search Term">
       <button class="btn btn-primary" type="submit">Go!</button>
     </form>
 
@@ -19,16 +20,17 @@
     </div>
 
     <section style="display: none" id="episodes-area">
-      <h2>Episodes</h2> 
+      <h2>Episodes</h2>
       <ul id="episodes-list">
       </ul>
-    </section>  
+    </section>
 
     <script src="http://unpkg.com/jquery"></script>
     <script src="http://unpkg.com/axios/dist/axios.js"></script>
     <script src="tvmaze.js"></script>
 
-    </div>
+  </div>
 
-  </body>
+</body>
+
 </html>
