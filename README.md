@@ -19,5 +19,6 @@ Assignment involved:
 - refining code to use one function to handle both seachShows and getEpisodes TVmaze api calls
   - error structures created to help give meaningful error messages when errors occurred with the api
 - the episode name links to the TVmaze page that includes many details about the episode besides the episode name, season number, season episode number displayed in the modal episode listing.
+- api calls were adjusted to use https instead of http due to mixed active content errors that occurred when running the application on github.
 
 The assignment furthered some concepts with axios, api calls, jQuery, and bootstrap.
