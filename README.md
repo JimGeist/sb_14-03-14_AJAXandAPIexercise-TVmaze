@@ -6,7 +6,7 @@ Assignment involved completing the TV Maze application that front ends the TVmaz
 
 Application performs a search for the television show entered in the search. Shows that satisfy the search criteria are listed on the page. Clicking on the Episodes button that appears with each show gets all the episodes for the show and presents them in a modal window.
 
-Please go to [TV Maze](https://jimgeist.github.io/sb_14-03-14_AJAXandAPIexercise-TVmaze/) for the application.
+Please go to [TV Maze](https://jimgeist.github.io/sb_14-03-14_AJAXandAPIexercise-TVmaze/tvmaze.html) for the application.
 
 ## Assignment Details
 Assignment involved: 

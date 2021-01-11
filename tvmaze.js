@@ -60,8 +60,8 @@ function buildErrorObject(id, errorHeadline, errorDesc, errorImage) {
  * 
  * @param {*} tvMazeUrl - the url that ultimate determines what information we want from 
  *             the TVmaze API.
- *             for show search:  http://api.tvmaze.com/search/shows?q=:searchString
- *             for get episodes: http://api.tvmaze.com/shows/:showId/episodes
+ *             for show search:  https://api.tvmaze.com/search/shows?q=:searchString
+ *             for get episodes: https://api.tvmaze.com/shows/:showId/episodes
  * @param {*} errObj - error object is set up prior to calling searchShowsOrGetEpisodes
  *             and it contains the appropriate error messages for nothing found, status not
  *             200, and unexpected errors for search for shows or get episodes api calls.
@@ -317,7 +317,7 @@ $("#search-form").on("submit", async function handleSearch(evt) {
     }
   }
 
-  let apiUrl = `http://api.tvmaze.com/search/shows?q=${queryFixed}`
+  let apiUrl = `https://api.tvmaze.com/search/shows?q=${queryFixed}`
   let shows = await searchShowsOrGetEpisodes(apiUrl, searchErrors, buildShowsArray, query);
 
   populateShows(shows);
@@ -357,7 +357,7 @@ $("#shows-list").on("click", "a", async function () {
       }
     }
 
-    let apiUrl = `http://api.tvmaze.com/shows/${showId}/episodes`
+    let apiUrl = `https://api.tvmaze.com/shows/${showId}/episodes`
     let episodes = await searchShowsOrGetEpisodes(apiUrl, getEpisodeErrors, buildEpisodesArray, showName);
     //populateEpisodesList(episodes, showId);
 
